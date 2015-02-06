@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="LGHBranding" Url="_catalogs/masterpage" RootWebOnly="TRUE" List="116">
+    <File Path="LGHBranding\LGHMaster.master" Url="LGHMaster.master" ReplaceContent="TRUE" Type="GhostableInLibrary" >
+      <Property Name="UIVersion" Value="15"></Property>
+
+    </File>
+    <File Path="LGHBranding\LGHMaster.html" Url="LGHMaster.html"  ReplaceContent="TRUE" Type="GhostableInLibrary">
+      <Property Name="UIVersion" Value="15"></Property>
+    </File>
+    
+  </Module>
+</Elements>

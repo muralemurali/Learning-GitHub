@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="FooterContents" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/FooterContents" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      
+      
+    <ContentType ID="0x01002c39efd5c95e409a85f5a12779ba55aa" Name="ListFieldsContentType"><FieldRefs><FieldRef ID="{982A9A6D-8605-4928-8A34-C13EF3E789B7}" Name="FooterTitle" /><FieldRef ID="{31F8E41E-568F-444F-ABB0-343E922C7AE6}" Name="FooterMenuContents" /><FieldRef ID="{96B62A57-09B1-47BC-B32F-332E5BC64817}" Name="LinkUrl" /></FieldRefs></ContentType><ContentTypeRef ID="0x01">
+        <Folder TargetName="Item" />
+      </ContentTypeRef><ContentTypeRef ID="0x0120" /></ContentTypes>
+    <Fields>
+      
+    <Field SourceID="http://schemas.microsoft.com/sharepoint/v3" ID="{982A9A6D-8605-4928-8A34-C13EF3E789B7}" Name="FooterTitle" StaticName="FooterTitle" DisplayName="Footer Title" Type="Lookup" Required="TRUE" List="Lists/Footer Headings" ShowField="Title" Overwrite="TRUE" Group="LGH Site Columns"></Field><Field SourceID="http://schemas.microsoft.com/sharepoint/v3" ID="{31F8E41E-568F-444F-ABB0-343E922C7AE6}" Name="FooterMenuContents" StaticName="FooterMenuContents" DisplayName="Footer Menu Contents" Type="Text" Required="FALSE" Group="LGH Site Columns"></Field><Field SourceID="http://schemas.microsoft.com/sharepoint/v3" ID="{96B62A57-09B1-47BC-B32F-332E5BC64817}" Name="LinkUrl" StaticName="LinkUrl" DisplayName="LinkUrl" Type="URL" Format="Hyperlink" Required="FALSE" Group="LGH Site Columns"></Field></Fields>
+    <Views>
+      
+      
+    <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="LinkTitleNoMenu"></FieldRef></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="Modified" Ascending="FALSE"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View><View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/15/images/generic.png?rev=23" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <JSLink>clienttemplates.js</JSLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          
+        <FieldRef Name="FooterTitle" /><FieldRef Name="FooterMenuContents" /><FieldRef Name="LinkUrl" /></ViewFields>
+        <Query>
+          <OrderBy>
+            
+          <FieldRef Name="ID"></FieldRef></OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View></Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

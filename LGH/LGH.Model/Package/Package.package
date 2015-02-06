@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e44f27ce-c9c6-475e-a4ed-94673b9c1a4b" solutionId="e44f27ce-c9c6-475e-a4ed-94673b9c1a4b" resetWebServer="false" sharePointProductVersion="15.0" name="LGH.Model" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="Microsoft.Practices.Unity.Configuration.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\UnityPackages\lib\net45\Microsoft.Practices.Unity.Configuration.dll" />
+    <customAssembly location="Microsoft.Practices.Unity.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\UnityPackages\lib\net45\Microsoft.Practices.Unity.dll" />
+    <customAssembly location="Microsoft.Practices.Unity.RegistrationByConvention.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\UnityPackages\lib\net45\Microsoft.Practices.Unity.RegistrationByConvention.dll" />
+  </assemblies>
+</package>

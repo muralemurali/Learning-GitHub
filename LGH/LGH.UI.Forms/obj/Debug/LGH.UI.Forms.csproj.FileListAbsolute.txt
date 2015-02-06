@@ -1,0 +1,7 @@
+C:\LGHSourceJan9\LGH\LGH.UI.Forms\obj\Debug\LGH.UI.Forms.csprojResolveAssemblyReference.cache
+C:\LGHSourceJan9\LGH\LGH.UI.Forms\bin\Debug\LGH.UI.Forms.dll
+C:\LGHSourceJan9\LGH\LGH.UI.Forms\bin\Debug\LGH.UI.Forms.pdb
+C:\LGHSourceJan9\LGH\LGH.UI.Forms\bin\Debug\LGH.ListConfig.dll
+C:\LGHSourceJan9\LGH\LGH.UI.Forms\bin\Debug\LGH.ListConfig.pdb
+C:\LGHSourceJan9\LGH\LGH.UI.Forms\obj\Debug\LGH.UI.Forms.dll
+C:\LGHSourceJan9\LGH\LGH.UI.Forms\obj\Debug\LGH.UI.Forms.pdb

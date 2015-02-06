@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="afe83966-a103-4437-bad8-5ea91015ec11" Scope="Web" Title="LGH.UI.PageLayouts.Feature">
+  <ElementManifests>
+    <ElementManifest Location="LGHGeneralPageLayout\Elements.xml" />
+    <ElementFile Location="LGHGeneralPageLayout\Sample.txt" />
+    <ElementFile Location="LGHGeneralPageLayout\LGHPageLayouts\GeneralPageLayout.aspx" />
+    <ElementManifest Location="LGHExchangeCalendarLayout\Elements.xml" />
+    <ElementFile Location="LGHExchangeCalendarLayout\Sample.txt" />
+    <ElementFile Location="LGHExchangeCalendarLayout\LGHPageLayouts\ExchangeCalendarLayout.aspx" />
+  </ElementManifests>
+</Feature>

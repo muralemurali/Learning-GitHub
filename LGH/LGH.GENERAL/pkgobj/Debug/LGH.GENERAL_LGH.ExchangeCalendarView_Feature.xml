@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.ExchangeCalendarView" Id="4ba3e526-d002-43e1-aa4c-71b7b0f8afe8" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="ExchangeCalendarViewCreationER\Elements.xml" />
+  </ElementManifests>
+</Feature>

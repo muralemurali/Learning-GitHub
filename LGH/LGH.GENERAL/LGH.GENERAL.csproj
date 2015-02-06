@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{184B4E50-CE9B-4B7E-9F7D-7D85F238BC0D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LGH.GENERAL</RootNamespace>
+    <AssemblyName>LGH.GENERAL</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\MeetingRoomInfo.cs" />
+    <Compile Include="EventReceiver\ExchangeCalendarViewCreationER\ExchangeCalendarViewCreationER.cs" />
+    <Compile Include="Presenter\ExchangeCalendarPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\IExchangeCalendarView.cs" />
+    <Compile Include="Webparts\LGHAdmin\LGHAdmin.ascx.cs">
+      <DependentUpon>LGHAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHAdmin\LGHAdmin.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGHAdmin.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHMeetingRoom\LGHMeetingRoom.ascx.cs">
+      <DependentUpon>LGHMeetingRoom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHMeetingRoom\LGHMeetingRoom.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGHMeetingRoom.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LoadExchangeMeetingCalendar\LoadExchangeMeetingCalendar.ascx.cs">
+      <DependentUpon>LoadExchangeMeetingCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LoadExchangeMeetingCalendar\LoadExchangeMeetingCalendar.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoadExchangeMeetingCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeetingRoom\ExchangeCalendarMeeting\ExchangeCalendarMeeting.ascx.cs">
+      <DependentUpon>ExchangeCalendarMeeting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeetingRoom\ExchangeCalendarMeeting\ExchangeCalendarMeeting.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ExchangeCalendarMeeting.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeetingRoom\LGHCalendar\LGHCalendar.ascx.cs">
+      <DependentUpon>LGHCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeetingRoom\LGHCalendar\LGHCalendar.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGHCalendar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHErrorPage\LGHErrorPage.ascx.cs">
+      <DependentUpon>LGHErrorPage.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHErrorPage\LGHErrorPage.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LGHErrorPage.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="EventReceiver\ExchangeCalendarViewCreationER\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5a60d94d-4084-48f0-b90c-a5312e633c05}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\LGH.ExchangeCalendarView\LGH.ExchangeCalendarView.feature">
+      <FeatureId>{9f7eeb0b-96aa-450c-b85b-7f494c900315}</FeatureId>
+    </None>
+    <None Include="Features\LGH.Admin.Feature\LGH.Admin.Feature.feature">
+      <FeatureId>{15976602-0f9f-4904-b359-765b26b433ef}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{6af0c45f-e7c1-4ceb-afc3-803aeb3164ee}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Webparts\LGHAdmin\LGHAdmin.webpart" />
+    <None Include="Webparts\LGHAdmin\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7f460e9c-9e18-470a-900a-5bfed28c64d9}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHMeetingRoom\LGHMeetingRoom.webpart" />
+    <None Include="Webparts\LGHMeetingRoom\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{851e8b23-8d89-4b75-b5d1-8c842b16711f}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LoadExchangeMeetingCalendar\LoadExchangeMeetingCalendar.webpart" />
+    <None Include="Webparts\LoadExchangeMeetingCalendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{55a8c5b5-15ad-4acd-bc14-de11cbc9c25b}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\MeetingRoom\ExchangeCalendarMeeting\ExchangeCalendarMeeting.webpart" />
+    <None Include="Webparts\MeetingRoom\ExchangeCalendarMeeting\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a71d313c-b441-462c-bddb-32ce3214c6d7}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\MeetingRoom\LGHCalendar\LGHCalendar.webpart" />
+    <None Include="Webparts\MeetingRoom\LGHCalendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ef4c3148-b337-4a5d-a8d6-1fa983cc9f8e}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHErrorPage\LGHErrorPage.webpart" />
+    <None Include="Webparts\LGHErrorPage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f2d9afb8-abc4-4da2-b01b-c87cd5c7a443}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LGH.Model\LGH.Model.csproj">
+      <Project>{2ae97215-a5f5-4570-a693-3cbb5b40469e}</Project>
+      <Name>LGH.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="EventReceiver\ExchangeCalendarViewCreationER\Elements.xml" />
+    <Content Include="Features\LGH.ExchangeCalendarView\LGH.ExchangeCalendarView.Template.xml">
+      <DependentUpon>LGH.ExchangeCalendarView.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LGH.Admin.Feature\LGH.Admin.Feature.Template.xml">
+      <DependentUpon>LGH.Admin.Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="Webparts\LGHAdmin\Elements.xml" />
+    <Content Include="Webparts\LGHAdmin\LGHAdmin.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LGHAdmin.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHMeetingRoom\Elements.xml" />
+    <Content Include="Webparts\LGHMeetingRoom\LGHMeetingRoom.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LGHMeetingRoom.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LoadExchangeMeetingCalendar\Elements.xml" />
+    <Content Include="Webparts\LoadExchangeMeetingCalendar\LoadExchangeMeetingCalendar.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LoadExchangeMeetingCalendar.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\MeetingRoom\ExchangeCalendarMeeting\Elements.xml" />
+    <Content Include="Webparts\MeetingRoom\ExchangeCalendarMeeting\ExchangeCalendarMeeting.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ExchangeCalendarMeeting.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\MeetingRoom\LGHCalendar\Elements.xml" />
+    <Content Include="Webparts\MeetingRoom\LGHCalendar\LGHCalendar.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LGHCalendar.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHErrorPage\Elements.xml" />
+    <Content Include="Webparts\LGHErrorPage\LGHErrorPage.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>LGHErrorPage.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

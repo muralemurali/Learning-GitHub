@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100E7908E1B72694D3784CC5036705A0548" Name="LGHBaseContentType" Group="LGH Custom Content Type" Description="LGH Custom ContentType" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{82642ec8-ef9b-478f-acf9-31f7d45fbc31}" DisplayName="$Resources:core,Title;" Name="LinkTitle" ReadOnly="TRUE" />
+      <FieldRef ID="{D1A36CD5-8583-47FD-88D7-9CFD0F491087}" DisplayName="Carousel Image" Required="FALSE" Name="CarouselImage" />
+      <FieldRef ID="{71382d1a-aadf-4c81-854d-6c4e6afb45e4}" DisplayName="Tile Description" Required="FALSE" Name="TileDescription" NumLines="6" />
+      <FieldRef ID="{96B62A57-09B1-47BC-B32F-332E5BC64817}" DisplayName="LinkUrl" Required="FALSE" Name="LinkUrl" Format="Hyperlink" />
+      <FieldRef ID="{63837B6F-C36C-4AA0-8B5B-F239A4FA5433}" DisplayName="Key" Required="FALSE" Name="KeyValue" />
+      <FieldRef ID="{79B3E48A-246F-468D-A6FD-67BA379C7ED4}" DisplayName="Question" Required="FALSE" Name="Question" NumLines="6"/>
+      <FieldRef ID="{F35F992B-DBA4-4E82-B652-853EF230B11B}" DisplayName="Answer" Required="FALSE" Name="Answer" NumLines="6" />
+      <FieldRef ID="{31F8E41E-568F-444F-ABB0-343E922C7AE6}" DisplayName="Footer Menu Contents" Required="FALSE" Name="FooterMenuContents" />
+      <FieldRef ID="{982A9A6D-8605-4928-8A34-C13EF3E789B7}" DisplayName="Footer Title" Required="TRUE" Name="FooterTitle" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

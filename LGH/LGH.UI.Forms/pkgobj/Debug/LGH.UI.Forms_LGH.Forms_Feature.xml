@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.UI.Forms" Id="5f576d0f-dff3-4daa-85b3-22ef9f79081f" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="AddFAQ\Elements.xml" />
+    <ElementFile Location="AddFAQ\AddFAQ.webpart" />
+    <ElementManifest Location="ViewFAQ\Elements.xml" />
+    <ElementFile Location="ViewFAQ\ViewFAQ.webpart" />
+    <ElementManifest Location="EditFAQ\Elements.xml" />
+    <ElementFile Location="EditFAQ\EditFAQ.webpart" />
+    <ElementManifest Location="AddCarousel\Elements.xml" />
+    <ElementFile Location="AddCarousel\AddCarousel.webpart" />
+    <ElementManifest Location="ViewCarousel\Elements.xml" />
+    <ElementFile Location="ViewCarousel\ViewCarousel.webpart" />
+    <ElementManifest Location="EditCarousel\Elements.xml" />
+    <ElementFile Location="EditCarousel\EditCarousel.webpart" />
+    <ElementManifest Location="AddLGHReports\Elements.xml" />
+    <ElementFile Location="AddLGHReports\AddLGHReports.webpart" />
+    <ElementManifest Location="AddNews\Elements.xml" />
+    <ElementFile Location="AddNews\AddNews.webpart" />
+    <ElementManifest Location="ViewReport\Elements.xml" />
+    <ElementFile Location="ViewReport\ViewReport.webpart" />
+    <ElementManifest Location="ViewNews\Elements.xml" />
+    <ElementFile Location="ViewNews\ViewNews.webpart" />
+    <ElementManifest Location="EditReport\Elements.xml" />
+    <ElementFile Location="EditReport\EditReport.webpart" />
+    <ElementManifest Location="EditNews\Elements.xml" />
+    <ElementFile Location="EditNews\EditNews.webpart" />
+  </ElementManifests>
+</Feature>

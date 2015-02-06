@@ -1,0 +1,1 @@
+bin\Debug\LGH.GENERAL.wsp

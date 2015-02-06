@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.Master.Branding" Id="48a29295-705a-4f80-89fb-77bc59fdeea2" Scope="Web">
+  <ElementManifests>
+    <ElementManifest Location="LGHBranding\Elements.xml" />
+    <ElementFile Location="LGHBranding\LGHMaster.html" />
+    <ElementFile Location="LGHBranding\LGHMaster.master" />
+  </ElementManifests>
+</Feature>

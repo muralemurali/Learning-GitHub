@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="794c0927-3482-4765-8c03-d1cba3a60379" 
+        solutionId="794c0927-3482-4765-8c03-d1cba3a60379" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="StaffDirectory"
+        sharePointProductVersion="15.0">
+</package>

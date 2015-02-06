@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x010047BEAED884FE41F48248B41EF83E2FEA" Name="LGHGeneralPageLayout" Group="LGH PageLayouts Content Types" Description="This is to create a Page based on LGH Custom ContentType" Inherits="TRUE" Version="0">
+    <FieldRefs>
+      <FieldRef ID="{D1A36CD5-8583-47FD-88D7-9CFD0F491087}" DisplayName="Carousel Image" Required="FALSE" Name="CarouselImage" />
+      <FieldRef ID="{96B62A57-09B1-47BC-B32F-332E5BC64817}" DisplayName="LinkUrl" Required="FALSE" Name="LinkUrl" Format="Hyperlink" />
+      <FieldRef ID="{31F8E41E-568F-444F-ABB0-343E922C7AE6}" DisplayName="Footer Menu Contents" Required="FALSE" Name="FooterMenuContents" />
+      <FieldRef ID="{71382d1a-aadf-4c81-854d-6c4e6afb45e4}" DisplayName="Tile Description" Required="FALSE" Name="TileDescription" NumLines="6" />
+      <FieldRef ID="{63837B6F-C36C-4AA0-8B5B-F239A4FA5433}" DisplayName="Key" Required="FALSE" Name="KeyValue" />
+      <FieldRef ID="{F35F992B-DBA4-4E82-B652-853EF230B11B}" DisplayName="Answer" Required="FALSE" Name="Answer" NumLines="6" />
+      <FieldRef ID="{79B3E48A-246F-468D-A6FD-67BA379C7ED4}" DisplayName="Question" Required="FALSE" Name="Question" NumLines="6" />
+    </FieldRefs>
+  </ContentType>
+</Elements>

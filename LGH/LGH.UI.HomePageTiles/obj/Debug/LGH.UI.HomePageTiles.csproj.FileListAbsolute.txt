@@ -1,0 +1,7 @@
+C:\LGHSourceJan9\LGH\LGH.UI.HomePageTiles\bin\Debug\LGH.UI.HomePageTiles.dll
+C:\LGHSourceJan9\LGH\LGH.UI.HomePageTiles\bin\Debug\LGH.UI.HomePageTiles.pdb
+C:\LGHSourceJan9\LGH\LGH.UI.HomePageTiles\bin\Debug\LGH.ListConfig.dll
+C:\LGHSourceJan9\LGH\LGH.UI.HomePageTiles\bin\Debug\LGH.ListConfig.pdb
+C:\LGHSourceJan9\LGH\LGH.UI.HomePageTiles\obj\Debug\LGH.UI.HomePageTiles.csprojResolveAssemblyReference.cache
+C:\LGHSourceJan9\LGH\LGH.UI.HomePageTiles\obj\Debug\LGH.UI.HomePageTiles.dll
+C:\LGHSourceJan9\LGH\LGH.UI.HomePageTiles\obj\Debug\LGH.UI.HomePageTiles.pdb

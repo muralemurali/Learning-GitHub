@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D71CA343-F699-4FAF-8DFA-AE8AC229D87D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LGH.Lists</RootNamespace>
+    <AssemblyName>LGH.Lists</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ContentTypes\LGHBaseContentType\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ff83a670-2607-4d1a-a594-72b21fd3c297}</SharePointProjectItemId>
+    </None>
+    <None Include="ContentTypes\LGHGeneralPageLayout\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{528eb8fc-2b6c-4c24-8d12-6ee9216fb2dc}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\LGHFooterHeading\LGHFooterHeading.feature">
+      <FeatureId>{ac7c7f2a-5f75-4bd3-861a-3fedea93c151}</FeatureId>
+    </None>
+    <None Include="Features\LGHList\LGHList.feature">
+      <FeatureId>{8c3b8d6e-4c85-4f1a-8ba6-f65bc82ae6a4}</FeatureId>
+    </None>
+    <None Include="Fields\LGH List Fields\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1049fa6a-c7ec-4a54-b19f-a90504bc954f}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Lists\Carousels\CarouselsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{899e3297-6446-4065-b39b-4866479a93c0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Carousels\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f6c8eab5-134b-4696-b21e-59e062e40ccb}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Exchange Calendar\Exchange Calendar Instance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{11432805-1dfb-4a40-919c-f439c35e9c92}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\Exchange Calendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1efc4661-05cb-4bef-a19c-98fd58447626}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\FAQ\FAQInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6f66719e-e8e6-4f52-9dc5-28592b9c5e31}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\FAQ\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7ebd2d51-a8e2-4453-85a2-25a5b9568345}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\FooterContents\FooterContentsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{144925cf-2254-4318-a8c6-9b6b87897ca7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\FooterContents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6608ca27-a232-4bd9-8652-e9d07959dca0}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\FooterHeadings\FooterHeadingsInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0720069a-b362-49c3-986d-4be8cd7e8ca2}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\FooterHeadings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8dfd4839-7dc1-4c21-bfa8-30444145d502}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\HomePageTiles\HomePageTilesInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2569ffda-2e8a-46b9-8d4e-0c5528cfd9eb}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\HomePageTiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2b7213c-b330-49fc-96e2-99f1d0168099}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\LGH-Meeting-Location\LGH-Meeting-LocationInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9e81479e-b1ba-479a-9175-7bda1a0ad75a}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\LGH-Meeting-Location\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{006c393e-1b9c-401a-ae66-f0b2f340769e}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\LGHImageLibrary\LGHImageLibraryInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9603f43b-e92f-466f-9af2-0bccff274025}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\LGHImageLibrary\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43d2a802-7dea-4f64-bfce-1e22b7b3b9c7}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\NewsLinks\NewsLinksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4525ceea-1bd6-4dc7-849c-01272e9dab9b}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\NewsLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6a0c15c7-a490-4a2b-916f-46729a32b513}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ReportsLinks\ReportsLinksInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d2f5afb5-786c-440a-9c27-197f9045f6fc}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\ReportsLinks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ab00bf39-fb70-45c2-9054-e85dfbda8ed9}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SystemConfiguration\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{59811c2b-97ed-40a8-80b6-37cb4fa67894}</SharePointProjectItemId>
+    </None>
+    <None Include="Lists\SystemConfiguration\SystemConfigurationInstance\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{aaa690d7-5e78-407d-904e-714a3c117cc3}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{d51942f1-dc47-4a6b-9e8c-00f5949fd0c4}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LGH.Model\LGH.Model.csproj">
+      <Project>{2ae97215-a5f5-4570-a693-3cbb5b40469e}</Project>
+      <Name>LGH.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ContentTypes\LGHBaseContentType\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="ContentTypes\LGHGeneralPageLayout\Elements.xml" />
+    <Content Include="Features\LGHFooterHeading\LGHFooterHeading.Template.xml">
+      <DependentUpon>LGHFooterHeading.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LGHList\LGHList.Template.xml">
+      <DependentUpon>LGHList.feature</DependentUpon>
+    </Content>
+    <Content Include="Fields\LGH List Fields\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Lists\Carousels\CarouselsInstance\Elements.xml" />
+    <Content Include="Lists\Carousels\Elements.xml" />
+    <Content Include="Lists\Carousels\Schema.xml" />
+    <Content Include="Lists\Exchange Calendar\Elements.xml" />
+    <Content Include="Lists\Exchange Calendar\Exchange Calendar Instance\Elements.xml" />
+    <Content Include="Lists\Exchange Calendar\Schema.xml" />
+    <Content Include="Lists\FAQ\Elements.xml" />
+    <Content Include="Lists\FAQ\FAQInstance\Elements.xml" />
+    <Content Include="Lists\FAQ\Schema.xml" />
+    <Content Include="Lists\FooterContents\Elements.xml" />
+    <Content Include="Lists\FooterContents\FooterContentsInstance\Elements.xml" />
+    <Content Include="Lists\FooterContents\Schema.xml" />
+    <Content Include="Lists\FooterHeadings\Elements.xml" />
+    <Content Include="Lists\FooterHeadings\FooterHeadingsInstance\Elements.xml" />
+    <Content Include="Lists\FooterHeadings\Schema.xml" />
+    <Content Include="Lists\HomePageTiles\Elements.xml" />
+    <Content Include="Lists\HomePageTiles\HomePageTilesInstance\Elements.xml" />
+    <Content Include="Lists\HomePageTiles\Schema.xml" />
+    <Content Include="Lists\LGH-Meeting-Location\Elements.xml" />
+    <Content Include="Lists\LGH-Meeting-Location\LGH-Meeting-LocationInstance\Elements.xml" />
+    <Content Include="Lists\LGH-Meeting-Location\Schema.xml" />
+    <Content Include="Lists\LGHImageLibrary\EditDlg.htm" />
+    <Content Include="Lists\LGHImageLibrary\Elements.xml" />
+    <Content Include="Lists\LGHImageLibrary\FileDlg.htm" />
+    <Content Include="Lists\LGHImageLibrary\LGHImageLibraryInstance\Elements.xml" />
+    <Content Include="Lists\LGHImageLibrary\Repair.aspx" />
+    <Content Include="Lists\LGHImageLibrary\Schema.xml" />
+    <Content Include="Lists\LGHImageLibrary\Upload.aspx" />
+    <Content Include="Lists\NewsLinks\Elements.xml" />
+    <Content Include="Lists\NewsLinks\NewsLinksInstance\Elements.xml" />
+    <Content Include="Lists\NewsLinks\Schema.xml" />
+    <Content Include="Lists\ReportsLinks\Elements.xml" />
+    <Content Include="Lists\ReportsLinks\ReportsLinksInstance\Elements.xml" />
+    <Content Include="Lists\ReportsLinks\Schema.xml" />
+    <Content Include="Lists\SystemConfiguration\Elements.xml" />
+    <Content Include="Lists\SystemConfiguration\Schema.xml" />
+    <Content Include="Lists\SystemConfiguration\SystemConfigurationInstance\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

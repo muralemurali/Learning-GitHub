@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="6af0c45f-e7c1-4ceb-afc3-803aeb3164ee" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="LGH.GENERAL.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="LGH.GENERAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a640c177366155b5" Namespace="LGH.GENERAL.Webparts.LGHAdmin" TypeName="*" />
+        <SafeControl Assembly="LGH.GENERAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a640c177366155b5" Namespace="LGH.GENERAL.Webparts.LGHErrorPage" TypeName="*" />
+        <SafeControl Assembly="LGH.GENERAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a640c177366155b5" Namespace="LGH.GENERAL.Webparts.LGHCalendar" TypeName="*" />
+        <SafeControl Assembly="LGH.GENERAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a640c177366155b5" Namespace="LGH.GENERAL.Webparts.MeetingRoom.ExchangeCalendarMeeting" TypeName="*" />
+        <SafeControl Assembly="LGH.GENERAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a640c177366155b5" Namespace="LGH.GENERAL.Webparts.LGHMeetingRoom" TypeName="*" />
+        <SafeControl Assembly="LGH.GENERAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a640c177366155b5" Namespace="LGH.GENERAL.Webparts.LoadExchangeMeetingCalendar" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="LGH.GENERAL_LGH.Admin.Feature\Feature.xml" />
+    <FeatureManifest Location="LGH.GENERAL_LGH.ExchangeCalendarView\Feature.xml" />
+  </FeatureManifests>
+</Solution>

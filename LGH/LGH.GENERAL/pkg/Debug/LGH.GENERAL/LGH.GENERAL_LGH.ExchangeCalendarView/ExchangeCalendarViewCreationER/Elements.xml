@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Receivers ListUrl="Lists/LGH-Meeting-Location">
+      <Receiver>
+        <Name>ExchangeCalendarViewCreationERItemAdded</Name>
+        <Type>ItemAdded</Type>
+        <Assembly>LGH.GENERAL, Version=1.0.0.0, Culture=neutral, PublicKeyToken=a640c177366155b5</Assembly>
+        <Class>LGH.GENERAL.EventReceiver.ExchangeCalendarViewCreationER.ExchangeCalendarViewCreationER</Class>
+        <SequenceNumber>10000</SequenceNumber>
+      </Receiver>
+  </Receivers>
+</Elements>

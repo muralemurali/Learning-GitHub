@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package dslVersion="1.0.0.0" 
+        Id="35d3607c-5b84-47d5-bb0f-3a1d1b044149" 
+        solutionId="35d3607c-5b84-47d5-bb0f-3a1d1b044149" 
+        xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel" 
+        name="LGH.HomePageTiles"
+        sharePointProductVersion="15.0">
+</package>

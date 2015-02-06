@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d5bd6920-6678-418d-9f22-53193efbde73" solutionId="d5bd6920-6678-418d-9f22-53193efbde73" resetWebServer="false" sharePointProductVersion="15.0" name="LGH.StaffDirectory" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b56cd430-92cd-44d0-85e5-a9af91a0d0e0" />
+    <featureReference itemId="412135c5-7cc1-44e4-93ae-35d8b7f15254" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d5a4b773-fca1-4cfc-9aec-081bfb63ce2f" />
+    <projectItemReference itemId="d082f5be-e4d5-40d5-a013-ef11d0d183c7" />
+  </projectItems>
+</package>

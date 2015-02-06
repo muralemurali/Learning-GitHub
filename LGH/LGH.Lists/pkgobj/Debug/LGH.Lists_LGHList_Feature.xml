@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.Lists" Id="b7bfd18c-f9d1-4a12-ab97-6ffa9ba6218a" Scope="Site">
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="376c4833-bcf9-4344-ad58-565042dd2b8d" FeatureTitle="LGH Footer Heading Lists" />
+  </ActivationDependencies>
+  <ElementManifests>
+    <ElementManifest Location="LGH List Fields\Elements.xml" />
+    <ElementManifest Location="LGHBaseContentType\Elements.xml" />
+    <ElementManifest Location="CarouselsInstance\Elements.xml" />
+    <ElementManifest Location="Carousels\Elements.xml" />
+    <ElementFile Location="Carousels\Schema.xml" />
+    <ElementManifest Location="NewsLinksInstance\Elements.xml" />
+    <ElementManifest Location="NewsLinks\Elements.xml" />
+    <ElementFile Location="NewsLinks\Schema.xml" />
+    <ElementManifest Location="LGHImageLibraryInstance\Elements.xml" />
+    <ElementManifest Location="LGHImageLibrary\Elements.xml" />
+    <ElementFile Location="LGHImageLibrary\Schema.xml" />
+    <ElementFile Location="LGHImageLibrary\EditDlg.htm" />
+    <ElementFile Location="LGHImageLibrary\FileDlg.htm" />
+    <ElementFile Location="LGHImageLibrary\Repair.aspx" />
+    <ElementFile Location="LGHImageLibrary\Upload.aspx" />
+    <ElementManifest Location="ReportsLinksInstance\Elements.xml" />
+    <ElementManifest Location="ReportsLinks\Elements.xml" />
+    <ElementFile Location="ReportsLinks\Schema.xml" />
+    <ElementManifest Location="FooterContentsInstance\Elements.xml" />
+    <ElementManifest Location="FooterContents\Elements.xml" />
+    <ElementFile Location="FooterContents\Schema.xml" />
+    <ElementManifest Location="HomePageTilesInstance\Elements.xml" />
+    <ElementManifest Location="HomePageTiles\Elements.xml" />
+    <ElementFile Location="HomePageTiles\Schema.xml" />
+    <ElementManifest Location="LGH-Meeting-LocationInstance\Elements.xml" />
+    <ElementManifest Location="LGH-Meeting-Location\Elements.xml" />
+    <ElementFile Location="LGH-Meeting-Location\Schema.xml" />
+    <ElementManifest Location="SystemConfigurationInstance\Elements.xml" />
+    <ElementManifest Location="SystemConfiguration\Elements.xml" />
+    <ElementFile Location="SystemConfiguration\Schema.xml" />
+    <ElementManifest Location="FAQInstance\Elements.xml" />
+    <ElementManifest Location="FAQ\Elements.xml" />
+    <ElementFile Location="FAQ\Schema.xml" />
+    <ElementManifest Location="Exchange Calendar Instance\Elements.xml" />
+    <ElementManifest Location="Exchange Calendar\Elements.xml" />
+    <ElementFile Location="Exchange Calendar\Schema.xml" />
+    <ElementManifest Location="LGHGeneralPageLayout\Elements.xml" />
+  </ElementManifests>
+</Feature>

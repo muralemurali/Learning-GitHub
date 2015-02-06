@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.PagesProvisioning" Id="ae599fe1-0d5e-4efb-82b6-7cbd2cb9ff06" ReceiverAssembly="LGH.Console, Version=1.0.0.0, Culture=neutral, PublicKeyToken=bf34698395325bb1" ReceiverClass="LGH.Console.Features.LGH_PagesProvisioning.LGH_PagesProvisioningEventReceiver" Scope="Site">
+  <ActivationDependencies>
+    <ActivationDependency FeatureId="f3a940ef-c376-4a45-9cec-4250803ea207" FeatureTitle="LGH.PageLayouts" />
+  </ActivationDependencies>
+</Feature>

@@ -1,0 +1,5 @@
+C:\LGHSourceJan9\LGH\LGH.Console\bin\Debug\LGH.Console.dll
+C:\LGHSourceJan9\LGH\LGH.Console\bin\Debug\LGH.Console.pdb
+C:\LGHSourceJan9\LGH\LGH.Console\obj\Debug\LGH.Console.dll
+C:\LGHSourceJan9\LGH\LGH.Console\obj\Debug\LGH.Console.pdb
+C:\LGHSourceJan9\LGH\LGH.Console\obj\Debug\LGH.Console.csprojResolveAssemblyReference.cache

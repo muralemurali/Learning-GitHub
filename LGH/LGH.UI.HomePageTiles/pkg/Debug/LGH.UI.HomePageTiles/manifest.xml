@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="f93339cc-f904-4af8-af13-15f4c145ae59" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="LGH.UI.HomePageTiles.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="LGH.UI.HomePageTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d95cb142c18b86fa" Namespace="LGH.UI.HomePageTiles.Webparts.HomeTiles" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.HomePageTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d95cb142c18b86fa" Namespace="LGH.UI.HomePageTiles.Webparts.GlobalBottomNavigation" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.HomePageTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d95cb142c18b86fa" Namespace="LGH.UI.HomePageTiles.Webparts.GlobalTopNavigation" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.HomePageTiles, Version=1.0.0.0, Culture=neutral, PublicKeyToken=d95cb142c18b86fa" Namespace="LGH.UI.HomePageTiles.Webparts.SocialMediaTopNavigation" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\LGH.UI.HomePageTiles\jquery-1.9.1.js" />
+    <TemplateFile Location="Layouts\LGH.UI.HomePageTiles\jquery-ui1.10.3.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="LGH.UI.HomePageTiles_LGH.HomePageTiles.Feature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

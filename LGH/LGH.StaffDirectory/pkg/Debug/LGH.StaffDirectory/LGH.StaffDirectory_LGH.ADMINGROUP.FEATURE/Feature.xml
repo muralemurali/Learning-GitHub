@@ -1,0 +1,2 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="c8536eda-620f-4b03-b247-175b9ae1d5b1" ReceiverAssembly="LGH.StaffDirectory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42757e2dbe8fc36a" ReceiverClass="LGH.StaffDirectory.Features.LGH.ADMINGROUP.FEATURE.LGHADMINGROUPEventReceiver" Scope="Site" Title="LGH.ADMIN.FEATURE"></Feature>

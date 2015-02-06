@@ -1,0 +1,5 @@
+C:\LGHSourceJan9\LGH\LGH.StaffDirectory\bin\Debug\LGH.StaffDirectory.dll
+C:\LGHSourceJan9\LGH\LGH.StaffDirectory\bin\Debug\LGH.StaffDirectory.pdb
+C:\LGHSourceJan9\LGH\LGH.StaffDirectory\obj\Debug\LGH.StaffDirectory.csprojResolveAssemblyReference.cache
+C:\LGHSourceJan9\LGH\LGH.StaffDirectory\obj\Debug\LGH.StaffDirectory.dll
+C:\LGHSourceJan9\LGH\LGH.StaffDirectory\obj\Debug\LGH.StaffDirectory.pdb

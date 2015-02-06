@@ -1,0 +1,7 @@
+C:\LGHSourceJan9\LGH\LGH.Model\bin\Debug\LGH.Model.dll
+C:\LGHSourceJan9\LGH\LGH.Model\bin\Debug\LGH.Model.pdb
+C:\LGHSourceJan9\LGH\LGH.Model\bin\Debug\LGH.ListConfig.dll
+C:\LGHSourceJan9\LGH\LGH.Model\bin\Debug\LGH.ListConfig.pdb
+C:\LGHSourceJan9\LGH\LGH.Model\obj\Debug\LGH.Model.csprojResolveAssemblyReference.cache
+C:\LGHSourceJan9\LGH\LGH.Model\obj\Debug\LGH.Model.dll
+C:\LGHSourceJan9\LGH\LGH.Model\obj\Debug\LGH.Model.pdb

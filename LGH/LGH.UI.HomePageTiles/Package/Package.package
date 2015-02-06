@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f93339cc-f904-4af8-af13-15f4c145ae59" solutionId="f93339cc-f904-4af8-af13-15f4c145ae59" resetWebServer="false" sharePointProductVersion="15.0" name="LGH.UI.HomePageTiles" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="85efd35d-41cd-4839-8b12-53ba79e3b95c" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="25637652-256d-4093-854b-184270745db0" />
+  </projectItems>
+</package>

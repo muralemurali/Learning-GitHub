@@ -1,0 +1,4 @@
+C:\LGHSourceJan9\LGH\LGH.UI.PageLayouts\bin\Debug\LGH.UI.PageLayouts.dll
+C:\LGHSourceJan9\LGH\LGH.UI.PageLayouts\bin\Debug\LGH.UI.PageLayouts.pdb
+C:\LGHSourceJan9\LGH\LGH.UI.PageLayouts\obj\Debug\LGH.UI.PageLayouts.dll
+C:\LGHSourceJan9\LGH\LGH.UI.PageLayouts\obj\Debug\LGH.UI.PageLayouts.pdb

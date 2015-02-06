@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="79b7c03d-83be-4294-aaaf-88d84702d589" Scope="Site" Title="LGH.StaffDirectory Feature1">
+  <ElementManifests>
+    <ElementManifest Location="StaffDirectory\Elements.xml" />
+    <ElementFile Location="StaffDirectory\StaffDirectory.webpart" />
+    <ElementManifest Location="SFDirectory\Elements.xml" />
+    <ElementFile Location="SFDirectory\SFDirectory.webpart" />
+  </ElementManifests>
+</Feature>

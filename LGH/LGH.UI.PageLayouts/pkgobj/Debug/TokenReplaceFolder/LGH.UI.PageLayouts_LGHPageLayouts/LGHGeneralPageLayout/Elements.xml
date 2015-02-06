@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="LGHGeneralPageLayout">
+    <File Path="LGHGeneralPageLayout\Sample.txt" Url="LGHGeneralPageLayout/Sample.txt" />
+    <File Path="LGHGeneralPageLayout\LGHPageLayouts\GeneralPageLayout.aspx" Url="LGHGeneralPageLayout/LGHPageLayouts/GeneralPageLayout.aspx" />
+  </Module>
+</Elements>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="LGH.UI.Forms.Webparts.LGHREPORTS.AddLGHReports.AddLGHReports, LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">LGH.UI.Forms - AddLGHReports</property>
+        <property name="Description" type="string">My Visual Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

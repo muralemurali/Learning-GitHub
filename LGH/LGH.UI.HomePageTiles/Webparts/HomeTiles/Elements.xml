@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="HomeTiles" List="113" Url="_catalogs/wp">
+    <File Path="HomeTiles\HomeTiles.webpart" Url="LGH.UI.HomePageTiles_HomeTiles.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="LGH Custom Webparts" />
+    </File>
+  </Module>
+</Elements>

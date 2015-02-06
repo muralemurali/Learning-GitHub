@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{121A7F98-6456-44DA-A892-76C05C5769AC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LGH.UI.HomePageTiles</RootNamespace>
+    <AssemblyName>LGH.UI.HomePageTiles</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\HomeTileConstants.cs" />
+    <Compile Include="Classes\Utility.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webparts\GlobalBottomNavigation\GlobalBottomNavigation.ascx.cs">
+      <DependentUpon>GlobalBottomNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\GlobalBottomNavigation\GlobalBottomNavigation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalBottomNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\GlobalTopNavigation\GlobalTopNavigation.ascx.cs">
+      <DependentUpon>GlobalTopNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\GlobalTopNavigation\GlobalTopNavigation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>GlobalTopNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\HomeTiles\HomeTiles.ascx.cs">
+      <DependentUpon>HomeTiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\HomeTiles\HomeTiles.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HomeTiles.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\SocialMediaTopNavigation\SocialMediaTopNavigation.ascx.cs">
+      <DependentUpon>SocialMediaTopNavigation.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\SocialMediaTopNavigation\SocialMediaTopNavigation.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SocialMediaTopNavigation.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\LGH.HomePageTiles.Feature\LGH.HomePageTiles.Feature.feature">
+      <FeatureId>{85efd35d-41cd-4839-8b12-53ba79e3b95c}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{25637652-256d-4093-854b-184270745db0}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f93339cc-f904-4af8-af13-15f4c145ae59}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Webparts\GlobalBottomNavigation\GlobalBottomNavigation.webpart" />
+    <None Include="Webparts\GlobalBottomNavigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ddbab95a-704f-4c6e-88ba-8bb42d92e026}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\GlobalTopNavigation\GlobalTopNavigation.webpart" />
+    <None Include="Webparts\GlobalTopNavigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{513c3220-8923-41cc-9b82-dfb017dd513a}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\HomeTiles\HomeTiles.webpart" />
+    <None Include="Webparts\HomeTiles\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{86436ba7-b155-46eb-bdae-0b7267cf874c}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\SocialMediaTopNavigation\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e96e924d-5af3-4b08-a607-6fb220379f10}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\SocialMediaTopNavigation\SocialMediaTopNavigation.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\LGH.HomePageTiles.Feature\LGH.HomePageTiles.Feature.Template.xml">
+      <DependentUpon>LGH.HomePageTiles.Feature.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\LGH.UI.HomePageTiles\jquery-1.9.1.js" />
+    <Content Include="Layouts\LGH.UI.HomePageTiles\jquery-ui1.10.3.js" />
+    <Content Include="Webparts\GlobalBottomNavigation\Elements.xml" />
+    <Content Include="Webparts\GlobalBottomNavigation\GlobalBottomNavigation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>GlobalBottomNavigation.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\GlobalTopNavigation\Elements.xml" />
+    <Content Include="Webparts\GlobalTopNavigation\GlobalTopNavigation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>GlobalTopNavigation.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\HomeTiles\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Webparts\HomeTiles\HomeTiles.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>HomeTiles.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\SocialMediaTopNavigation\Elements.xml" />
+    <Content Include="Webparts\SocialMediaTopNavigation\SocialMediaTopNavigation.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SocialMediaTopNavigation.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LGH.ListConfig\LGH.ListConfig.csproj">
+      <Project>{5a7ac130-06b4-4739-bb9a-c9d51b45e130}</Project>
+      <Name>LGH.ListConfig</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

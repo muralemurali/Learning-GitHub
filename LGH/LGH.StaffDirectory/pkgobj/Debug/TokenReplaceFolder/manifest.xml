@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d5bd6920-6678-418d-9f22-53193efbde73" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="LGH.StaffDirectory.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="LGH.StaffDirectory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42757e2dbe8fc36a" Namespace="LGH.StaffDirectory.StaffDirectory.StaffDirectory" TypeName="*" />
+        <SafeControl Assembly="LGH.StaffDirectory, Version=1.0.0.0, Culture=neutral, PublicKeyToken=42757e2dbe8fc36a" Namespace="LGH.StaffDirectory.WebParts.StaffDirectory.SFDirectory" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\LGH.StaffDirectory\Images\empty_user.jpg" />
+    <TemplateFile Location="Layouts\LGH.StaffDirectory\Images\no_image.gif" />
+    <TemplateFile Location="Layouts\LGH.StaffDirectory\Images\staff_man.jpg" />
+    <TemplateFile Location="Images\LGH.StaffDirectory\no_image.gif" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="LGH.StaffDirectory_LGH.StaffDirectoryFeature\Feature.xml" />
+    <FeatureManifest Location="LGH.StaffDirectory_LGH.ADMINGROUP.FEATURE\Feature.xml" />
+  </FeatureManifests>
+</Solution>

@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c9265a95-73e7-4cc7-9909-94197f996e3f" solutionId="c9265a95-73e7-4cc7-9909-94197f996e3f" resetWebServer="false" sharePointProductVersion="15.0" name="LGH.Branding" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="3443f8e1-df23-4d63-a05c-ff86a6370e5d" />
+  </features>
+</package>

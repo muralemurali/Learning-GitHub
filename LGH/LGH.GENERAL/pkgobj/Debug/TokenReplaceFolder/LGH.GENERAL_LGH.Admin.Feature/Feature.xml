@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.GENERAL Feature1" Id="870c3988-db4b-4485-9bf4-f55f568d893a" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="LGHAdmin\Elements.xml" />
+    <ElementFile Location="LGHAdmin\LGHAdmin.webpart" />
+    <ElementManifest Location="LGHErrorPage\Elements.xml" />
+    <ElementFile Location="LGHErrorPage\LGHErrorPage.webpart" />
+    <ElementManifest Location="LGHCalendar\Elements.xml" />
+    <ElementFile Location="LGHCalendar\LGHCalendar.webpart" />
+    <ElementManifest Location="ExchangeCalendarMeeting\Elements.xml" />
+    <ElementFile Location="ExchangeCalendarMeeting\ExchangeCalendarMeeting.webpart" />
+    <ElementManifest Location="LGHMeetingRoom\Elements.xml" />
+    <ElementFile Location="LGHMeetingRoom\LGHMeetingRoom.webpart" />
+    <ElementManifest Location="LoadExchangeMeetingCalendar\Elements.xml" />
+    <ElementFile Location="LoadExchangeMeetingCalendar\LoadExchangeMeetingCalendar.webpart" />
+  </ElementManifests>
+</Feature>

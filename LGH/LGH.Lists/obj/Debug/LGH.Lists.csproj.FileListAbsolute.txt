@@ -1,0 +1,5 @@
+C:\LGHSourceJan9\LGH\LGH.Lists\bin\Debug\LGH.Lists.dll
+C:\LGHSourceJan9\LGH\LGH.Lists\bin\Debug\LGH.Lists.pdb
+C:\LGHSourceJan9\LGH\LGH.Lists\obj\Debug\LGH.Lists.csprojResolveAssemblyReference.cache
+C:\LGHSourceJan9\LGH\LGH.Lists\obj\Debug\LGH.Lists.dll
+C:\LGHSourceJan9\LGH\LGH.Lists\obj\Debug\LGH.Lists.pdb

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="masterpage" Url="_catalogs/masterpage" RootWebOnly="TRUE" List="116">
+    <File Url="GeneralPageLayout.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" Path="masterpage\GeneralPageLayout.aspx">
+      <Property Name="Title" Value="LGH General Page Layout" />
+      <Property Name="UIVersion" Value="15"></Property>
+      <Property Name="MasterPageDescription" Value="LGH Layout GeneralWebpart"></Property>
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingAssociatedContentType" Value=";#LGHGeneralPageLayout;#0x010047BEAED884FE41F48248B41EF83E2FEA;#"></Property>
+    </File>
+    <!--<File Path="masterpage\GeneralPageLayout.aspx" Url="masterpage/GeneralPageLayout.aspx" />-->
+    <File Url="MeetingRoomPageLayout.aspx" Type="GhostableInLibrary" ReplaceContent="TRUE" Path="masterpage\MeetingRoomPageLayout.aspx">
+      <Property Name="Title" Value="LGH MeetingRoom Page Layout" />
+      <Property Name="UIVersion" Value="15"></Property>
+      <Property Name="MasterPageDescription" Value="LGH Layout Meeting Room"></Property>
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;" />
+      <Property Name="PublishingAssociatedContentType" Value=";#LGHGeneralPageLayout;#0x010047BEAED884FE41F48248B41EF83E2FEA;#"></Property>
+    </File>
+  </Module>
+</Elements>
+
+
+

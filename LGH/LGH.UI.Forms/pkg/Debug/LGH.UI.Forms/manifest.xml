@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="70d6651d-8ae1-4073-ba43-c40007244b9c" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="LGH.UI.Forms.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.FAQ.AddFAQ" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.FAQ.ViewFAQ" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.FAQ.EditFAQ" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.CAROUSEL.AddCarousel" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.CAROUSEL.ViewCarousel" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.CAROUSEL.EditCarousel" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.LGHREPORTS.AddLGHReports" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.LGHNEWS.AddNews" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.LGHREPORTS.ViewReport" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.LGHNEWS.ViewNews" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.LGHREPORTS.EditReport" TypeName="*" />
+        <SafeControl Assembly="LGH.UI.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=b11929bc7fb11892" Namespace="LGH.UI.Forms.Webparts.LGHNEWS.EditNews" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\LGH.UI.Forms\jquery-1.9.1.js" />
+    <TemplateFile Location="Layouts\LGH.UI.Forms\jquery-ui1.10.3.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="LGH.UI.Forms_LGH.Forms\Feature.xml" />
+  </FeatureManifests>
+</Solution>

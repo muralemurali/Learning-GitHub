@@ -1,0 +1,329 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{033E6D02-703E-4FE0-B5F3-47A103EA414C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LGH.UI.Forms</RootNamespace>
+    <AssemblyName>LGH.UI.Forms</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Publishing, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\FormLogics.cs" />
+    <Compile Include="Presenter\CAROUSEL\AddCarouselHomePresenter.cs" />
+    <Compile Include="Presenter\CAROUSEL\EditCarouselPresenter.cs" />
+    <Compile Include="Presenter\CAROUSEL\ViewCarouselPresenter.cs" />
+    <Compile Include="Presenter\FAQ\AddFaqPresenter.cs" />
+    <Compile Include="Presenter\FAQ\EditFAQPresenter.cs" />
+    <Compile Include="Presenter\FAQ\ViewFAQPresenter.cs" />
+    <Compile Include="Presenter\NEWSLINKS\AddNewsPresenter.cs" />
+    <Compile Include="Presenter\NEWSLINKS\EditNewsPresenter.cs" />
+    <Compile Include="Presenter\NEWSLINKS\ViewNewsPresenter.cs" />
+    <Compile Include="Presenter\REPORTSLINKS\AddReportPresenter.cs" />
+    <Compile Include="Presenter\REPORTSLINKS\EditReportPresenter.cs" />
+    <Compile Include="Presenter\REPORTSLINKS\ViewReportPresenter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\CAROUSEL\IAddCarouselHomeView.cs" />
+    <Compile Include="Views\CAROUSEL\ICarouselHomeView.cs" />
+    <Compile Include="Views\CAROUSEL\IEditCarouselView.cs" />
+    <Compile Include="Views\FAQ\IAddFaqView.cs" />
+    <Compile Include="Views\FAQ\IEditFAQView.cs" />
+    <Compile Include="Views\FAQ\IFaqView.cs" />
+    <Compile Include="Views\NEWSLINKS\IAddNewsView.cs" />
+    <Compile Include="Views\NEWSLINKS\IEditNewsView.cs" />
+    <Compile Include="Views\NEWSLINKS\INewsHomeView.cs" />
+    <Compile Include="Views\REPORTSLINKS\IAddReportView.cs" />
+    <Compile Include="Views\REPORTSLINKS\IEditReportsView.cs" />
+    <Compile Include="Views\REPORTSLINKS\IReportsHomeView.cs" />
+    <Compile Include="Webparts\CAROUSEL\AddCarousel\AddCarousel.ascx.cs">
+      <DependentUpon>AddCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\CAROUSEL\AddCarousel\AddCarousel.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\CAROUSEL\EditCarousel\EditCarousel.ascx.cs">
+      <DependentUpon>EditCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\CAROUSEL\EditCarousel\EditCarousel.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\CAROUSEL\ViewCarousel\ViewCarousel.ascx.cs">
+      <DependentUpon>ViewCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\CAROUSEL\ViewCarousel\ViewCarousel.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewCarousel.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FAQ\AddFAQ\AddFAQ.ascx.cs">
+      <DependentUpon>AddFAQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FAQ\AddFAQ\AddFAQ.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddFAQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FAQ\EditFAQ\EditFAQ.ascx.cs">
+      <DependentUpon>EditFAQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FAQ\EditFAQ\EditFAQ.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditFAQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FAQ\ViewFAQ\ViewFAQ.ascx.cs">
+      <DependentUpon>ViewFAQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\FAQ\ViewFAQ\ViewFAQ.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewFAQ.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHNEWS\AddNews\AddNews.ascx.cs">
+      <DependentUpon>AddNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHNEWS\AddNews\AddNews.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHNEWS\EditNews\EditNews.ascx.cs">
+      <DependentUpon>EditNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHNEWS\EditNews\EditNews.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHNEWS\ViewNews\ViewNews.ascx.cs">
+      <DependentUpon>ViewNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHNEWS\ViewNews\ViewNews.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewNews.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHREPORTS\AddLGHReports\AddLGHReports.ascx.cs">
+      <DependentUpon>AddLGHReports.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHREPORTS\AddLGHReports\AddLGHReports.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddLGHReports.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHREPORTS\EditReport\EditReport.ascx.cs">
+      <DependentUpon>EditReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHREPORTS\EditReport\EditReport.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EditReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHREPORTS\ViewReport\ViewReport.ascx.cs">
+      <DependentUpon>ViewReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\LGHREPORTS\ViewReport\ViewReport.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViewReport.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\LGH.Forms\LGH.Forms.feature">
+      <FeatureId>{830266db-17ba-4613-a1f3-584736507506}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{add8f1da-6cc8-4eea-916d-05c3c2b9e932}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{70d6651d-8ae1-4073-ba43-c40007244b9c}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Webparts\CAROUSEL\AddCarousel\AddCarousel.webpart" />
+    <None Include="Webparts\CAROUSEL\AddCarousel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4a9b0924-7cce-49ff-a333-00e2a06996aa}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\CAROUSEL\EditCarousel\EditCarousel.webpart" />
+    <None Include="Webparts\CAROUSEL\EditCarousel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{01f18f40-21f7-4bc1-b8be-8f3ef8ec9dd9}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\CAROUSEL\ViewCarousel\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{94ed948c-0fe6-4131-a9ec-cfeefda91174}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\CAROUSEL\ViewCarousel\ViewCarousel.webpart" />
+    <None Include="Webparts\FAQ\AddFAQ\AddFAQ.webpart" />
+    <None Include="Webparts\FAQ\AddFAQ\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fb311952-5a70-42e7-9a4a-1b03f54b4051}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\FAQ\EditFAQ\EditFAQ.webpart" />
+    <None Include="Webparts\FAQ\EditFAQ\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b4778bb1-9c49-4965-a2eb-f7e3ced4c559}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\FAQ\ViewFAQ\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{85739890-9b32-42ee-abe5-628684e1140f}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\FAQ\ViewFAQ\ViewFAQ.webpart" />
+    <None Include="Webparts\LGHNEWS\AddNews\AddNews.webpart" />
+    <None Include="Webparts\LGHNEWS\AddNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7afb8a6b-16bc-41e9-a288-93f6bd1f2083}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHNEWS\EditNews\EditNews.webpart" />
+    <None Include="Webparts\LGHNEWS\EditNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cb3a5bcc-df51-4810-ab5c-9206500a7289}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHNEWS\ViewNews\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{70517453-1146-41bd-a5c0-e297d2a709e2}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHNEWS\ViewNews\ViewNews.webpart" />
+    <None Include="Webparts\LGHREPORTS\AddLGHReports\AddLGHReports.webpart" />
+    <None Include="Webparts\LGHREPORTS\AddLGHReports\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8c02f911-5888-4fa8-a839-09049f9dabfa}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHREPORTS\EditReport\EditReport.webpart" />
+    <None Include="Webparts\LGHREPORTS\EditReport\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d80471ad-a939-40ce-9721-5b16c0813780}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHREPORTS\ViewReport\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4519161b-d3e7-4a6d-bfc7-603932efd891}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\LGHREPORTS\ViewReport\ViewReport.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\LGH.Forms\LGH.Forms.Template.xml">
+      <DependentUpon>LGH.Forms.feature</DependentUpon>
+    </Content>
+    <Content Include="Layouts\LGH.UI.Forms\jquery-1.9.1.js" />
+    <Content Include="Layouts\LGH.UI.Forms\jquery-ui1.10.3.js" />
+    <Content Include="Webparts\CAROUSEL\AddCarousel\AddCarousel.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AddCarousel.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\CAROUSEL\AddCarousel\Elements.xml" />
+    <Content Include="Webparts\CAROUSEL\EditCarousel\EditCarousel.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>EditCarousel.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\CAROUSEL\EditCarousel\Elements.xml" />
+    <Content Include="Webparts\CAROUSEL\ViewCarousel\Elements.xml" />
+    <Content Include="Webparts\CAROUSEL\ViewCarousel\ViewCarousel.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ViewCarousel.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\FAQ\AddFAQ\AddFAQ.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AddFAQ.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\FAQ\AddFAQ\Elements.xml" />
+    <Content Include="Webparts\FAQ\EditFAQ\EditFAQ.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>EditFAQ.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\FAQ\EditFAQ\Elements.xml" />
+    <Content Include="Webparts\FAQ\ViewFAQ\Elements.xml" />
+    <Content Include="Webparts\FAQ\ViewFAQ\ViewFAQ.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ViewFAQ.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHNEWS\AddNews\AddNews.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AddNews.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHNEWS\AddNews\Elements.xml" />
+    <Content Include="Webparts\LGHNEWS\EditNews\EditNews.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>EditNews.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHNEWS\EditNews\Elements.xml" />
+    <Content Include="Webparts\LGHNEWS\ViewNews\Elements.xml" />
+    <Content Include="Webparts\LGHNEWS\ViewNews\ViewNews.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ViewNews.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHREPORTS\AddLGHReports\AddLGHReports.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AddLGHReports.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHREPORTS\AddLGHReports\Elements.xml" />
+    <Content Include="Webparts\LGHREPORTS\EditReport\EditReport.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>EditReport.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\LGHREPORTS\EditReport\Elements.xml" />
+    <Content Include="Webparts\LGHREPORTS\ViewReport\Elements.xml" />
+    <Content Include="Webparts\LGHREPORTS\ViewReport\ViewReport.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ViewReport.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LGH.ListConfig\LGH.ListConfig.csproj">
+      <Project>{5a7ac130-06b4-4739-bb9a-c9d51b45e130}</Project>
+      <Name>LGH.ListConfig</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LGH.Model\LGH.Model.csproj">
+      <Project>{2ae97215-a5f5-4570-a693-3cbb5b40469e}</Project>
+      <Name>LGH.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

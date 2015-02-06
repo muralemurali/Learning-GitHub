@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="70d6651d-8ae1-4073-ba43-c40007244b9c" solutionId="70d6651d-8ae1-4073-ba43-c40007244b9c" resetWebServer="false" sharePointProductVersion="15.0" name="LGH.UI.Forms" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="830266db-17ba-4613-a1f3-584736507506" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="add8f1da-6cc8-4eea-916d-05c3c2b9e932" />
+  </projectItems>
+</package>

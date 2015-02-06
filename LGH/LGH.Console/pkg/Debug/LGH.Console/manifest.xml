@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="6729fc79-25ae-4e77-ab5f-b19721355adc" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="LGH.Console.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="LGH.PagesProvisioning_LGH-PageLayouts\Feature.xml" />
+    <FeatureManifest Location="LGH.PagesProvisioning_LGH-PagesProvisioning\Feature.xml" />
+  </FeatureManifests>
+</Solution>

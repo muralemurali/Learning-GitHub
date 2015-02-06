@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="c9265a95-73e7-4cc7-9909-94197f996e3f" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="LGH.Branding.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="LGH.Branding_LGH.Master.Branding\Feature.xml" />
+  </FeatureManifests>
+</Solution>

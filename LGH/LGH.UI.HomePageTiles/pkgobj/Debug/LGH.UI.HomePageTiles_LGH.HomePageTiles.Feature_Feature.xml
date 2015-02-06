@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.UI.HomePageTiles Feature1" Id="bad066fa-817e-4599-831f-509952cf7db9" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="HomeTiles\Elements.xml" />
+    <ElementFile Location="HomeTiles\HomeTiles.webpart" />
+    <ElementManifest Location="GlobalBottomNavigation\Elements.xml" />
+    <ElementFile Location="GlobalBottomNavigation\GlobalBottomNavigation.webpart" />
+    <ElementManifest Location="GlobalTopNavigation\Elements.xml" />
+    <ElementFile Location="GlobalTopNavigation\GlobalTopNavigation.webpart" />
+    <ElementManifest Location="SocialMediaTopNavigation\Elements.xml" />
+    <ElementFile Location="SocialMediaTopNavigation\SocialMediaTopNavigation.webpart" />
+  </ElementManifests>
+</Feature>

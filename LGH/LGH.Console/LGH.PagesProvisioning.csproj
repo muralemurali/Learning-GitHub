@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D839355-F0B0-4CD6-8793-ACB9AF239C86}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LGH.Console</RootNamespace>
+    <AssemblyName>LGH.Console</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\LGH-PagesProvisioning\LGH-PagesProvisioning.EventReceiver.cs">
+      <DependentUpon>LGH-PagesProvisioning.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\LGH-PagesProvisioning\LGH-PagesProvisioning.feature">
+      <FeatureId>{c8c37212-c8e3-4c0b-b47d-dcf14eb2ed93}</FeatureId>
+    </None>
+    <None Include="Features\LGH-PageLayouts\LGH-PageLayouts.feature">
+      <FeatureId>{e13bdb07-2b14-4c7d-a3dc-82bacfa6f580}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Layouts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cd9f3aad-9fe2-49a6-b823-2d73a22a4afe}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{6729fc79-25ae-4e77-ab5f-b19721355adc}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="PageLayouts\masterpage\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ae5bd2af-1ac8-4f88-a33e-3cb16022226c}</SharePointProjectItemId>
+    </None>
+    <None Include="Pages\Pages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2d99876f-17b8-4911-96ef-6139ea053cdf}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Layouts\LGH.Console\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\LGH-PagesProvisioning\LGH-PagesProvisioning.Template.xml">
+      <DependentUpon>LGH-PagesProvisioning.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\LGH-PageLayouts\LGH-PageLayouts.Template.xml">
+      <DependentUpon>LGH-PageLayouts.feature</DependentUpon>
+    </Content>
+    <Content Include="PageLayouts\masterpage\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="PageLayouts\masterpage\GeneralPageLayout.aspx" />
+    <Content Include="PageLayouts\masterpage\MeetingRoomPageLayout.aspx" />
+    <Content Include="Pages\Pages\Elements.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\LGH.GENERAL\LGH.GENERAL.csproj">
+      <Project>{184b4e50-ce9b-4b7e-9f7d-7d85f238bc0d}</Project>
+      <Name>LGH.GENERAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LGH.Model\LGH.Model.csproj">
+      <Project>{2ae97215-a5f5-4570-a693-3cbb5b40469e}</Project>
+      <Name>LGH.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LGH.StaffDirectory\LGH.StaffDirectory.csproj">
+      <Project>{1631de21-9c92-48ee-bd29-b72fc1f7e7b1}</Project>
+      <Name>LGH.StaffDirectory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LGH.UI.Forms\LGH.UI.Forms.csproj">
+      <Project>{033e6d02-703e-4fe0-b5f3-47a103ea414c}</Project>
+      <Name>LGH.UI.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LGH.UI.HomePageTiles\LGH.UI.HomePageTiles.csproj">
+      <Project>{121a7f98-6456-44da-a892-76c05c5769ac}</Project>
+      <Name>LGH.UI.HomePageTiles</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

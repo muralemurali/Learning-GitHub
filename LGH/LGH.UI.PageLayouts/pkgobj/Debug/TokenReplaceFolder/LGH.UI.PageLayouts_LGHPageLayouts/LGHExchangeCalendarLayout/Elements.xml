@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="LGHExchangeCalendarLayout" Path="LGHExchangeCalendarLayout" Url="_catalogs/masterpage" List="116" RootWebOnly="TRUE">
+    <File Path="LGHExchangeCalendarLayout\Sample.txt" Url="LGHExchangeCalendarLayout/Sample.txt" />
+    <File Path="LGHExchangeCalendarLayout\LGHPageLayouts\ExchangeCalendarLayout.aspx" Url="LGHExchangeCalendarLayout/LGHPageLayouts/ExchangeCalendarLayout.aspx"  Type="GhostableInLibrary" IgnoreIfAlreadyExists="true">
+      <Property Name="Title" Value="LGH Exchange Calendar Page Layout"></Property>
+      <Property Name="UIVersion" Value="15"></Property>
+      <Property Name="MasterPageDescription" Value="This Layout is for LGH Exchage Calendar"></Property>
+      <Property Name="ContentType" Value="$Resources:cmscore,contenttype_pagelayout_name;"></Property>
+      <Property Name="PublishingAssociatedContentType" Value=";#LGHBasicLayoutPage;#0x0100C9D60AE7459F4A38BBA4D81A590F2425;#"></Property>
+    </File>/>
+  </Module>
+</Elements>
+
+
+
+
+
+

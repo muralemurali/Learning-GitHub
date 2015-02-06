@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f1816151-3c23-4c41-83b9-0e91c94f4c08" solutionId="f1816151-3c23-4c41-83b9-0e91c94f4c08" resetWebServer="false" sharePointProductVersion="15.0" name="LGH.UI.PageLayouts" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="eff03d9e-cdfd-4a33-b556-d17abc7bf59f" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="ec027a2d-60c7-4a1a-afe3-4ff2076d8b5f" />
+  </projectItems>
+</package>

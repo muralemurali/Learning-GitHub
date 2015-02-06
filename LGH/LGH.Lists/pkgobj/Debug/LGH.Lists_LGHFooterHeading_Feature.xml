@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH Footer Heading Lists" Id="376c4833-bcf9-4344-ad58-565042dd2b8d" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="FooterHeadingsInstance\Elements.xml" />
+    <ElementManifest Location="FooterHeadings\Elements.xml" />
+    <ElementFile Location="FooterHeadings\Schema.xml" />
+  </ElementManifests>
+</Feature>

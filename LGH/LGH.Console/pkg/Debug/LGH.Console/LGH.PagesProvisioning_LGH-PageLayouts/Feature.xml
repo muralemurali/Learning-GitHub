@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Title="LGH.PageLayouts" Id="f3a940ef-c376-4a45-9cec-4250803ea207" Scope="Site">
+  <ElementManifests>
+    <ElementManifest Location="masterpage\Elements.xml" />
+    <ElementFile Location="masterpage\GeneralPageLayout.aspx" />
+    <ElementFile Location="masterpage\MeetingRoomPageLayout.aspx" />
+    <ElementManifest Location="Pages\Elements.xml" />
+  </ElementManifests>
+</Feature>
